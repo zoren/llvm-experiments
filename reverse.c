@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 const int nl = '\n';
 
 int main() {
@@ -7,7 +8,7 @@ int main() {
   int buffer[256];
   long int index = 0;
 
-  while((c = getchar()) >= 0) {
+  while((c = getchar()) > -1) {
     if(index > 255) {
       return -1;
     }
