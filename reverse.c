@@ -7,7 +7,7 @@ int main() {
   int buffer[256];
   long int index = 0;
 
-  while((c = getchar())>=0) {
+  while((c = getchar()) >= 0) {
     if(index > 255) {
       return -1;
     }
