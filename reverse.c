@@ -6,8 +6,8 @@ const long int buffer_size = 256;
 
 int main() {
   int c;
-  int buffer[buffer_size];
   long int index = 0;
+  int buffer[buffer_size];
 
   while((c = getchar()) > -1) {
     if(index > buffer_size - 1) {
