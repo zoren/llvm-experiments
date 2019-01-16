@@ -12,8 +12,9 @@ int main() {
       return -1;
     }
     if(c == nl) {
-      for(long int i = index-1;i > -1;i--) {
-        putchar(buffer[i]);
+      while(index != 0) {
+        index--;
+        putchar(buffer[index]);
       }
       putchar(nl);
     } else {
