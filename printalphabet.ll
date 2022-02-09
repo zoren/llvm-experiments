@@ -1,5 +1,7 @@
 declare i32 @putchar(i32) nounwind
 
+constant @nl = 10;
+
 define i32 @main() {
 start:
     br label %loop
@@ -12,6 +14,6 @@ loop:
     br i1 %atEnd, label %end, label %loop
 
 end:
-    tail call i32 @putchar(i32 10)
+    tail call i32 @putchar(i32 @nl)
     ret i32 0
 }

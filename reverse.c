@@ -9,7 +9,7 @@ int main() {
   long int index = 0;
   int buffer[buffer_size];
 
-  while((c = getchar()) > -1) {
+  while((c = getchar()) != EOF) {
     if(index > buffer_size - 1) {
       return -1;
     }
